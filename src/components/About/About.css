@@ -1,0 +1,43 @@
+#about {
+    height: calc(100vh - 10rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.aboutContent {
+    height: 50vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: pink;
+}
+
+.introPara {
+    font-size: large;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 840px) {
+    .introPara {
+        font-size: 3vw;
+        max-width: 25rem;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
