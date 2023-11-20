@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -10,10 +11,12 @@ function App() {
   return (
     <main>
       <Navbar />
-      <About />      
+      <About />
+      <Fade duration={2000}> 
       <Skills />
       <Projects />
       <Contact />
+      </Fade>  
       <Footer />
     </main>
   )

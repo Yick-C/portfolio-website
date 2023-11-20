@@ -10,5 +10,13 @@ body {
     background: #610C9F;
     color: white;
     overflow: hidden;
+}
+
+html {
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
+  }
+  
+section {
+    scroll-snap-align: start;
 }
