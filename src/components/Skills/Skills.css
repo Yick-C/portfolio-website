@@ -20,7 +20,7 @@
 }
 
 .skillDesc {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1rem;
     max-width: 60rem;
     padding: 0 2rem;
@@ -52,7 +52,11 @@
 }
 
 @media screen and (max-width: 720px) {
-    .skillItemText>p {
+    .skillItemText>h2 {
         font-size: 3vw;
     }
+    .skillItemText>p {
+        font-size: 2.5vw;
+    }
+    
 }

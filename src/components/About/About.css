@@ -54,14 +54,24 @@
 }
 
 @media screen and (max-width: 840px) {
-    .introPara {
-        font-size: 3vw;
-        max-width: 25rem;
+    .aboutContent {
+        height: 100vh;
     }
     .hello {
         font-size: 4.5vw;
     }
+    .introName {
+        color: pink;
+    }
+    .introText {
+        font-size: 10vw;
+    }
+    .introPara {
+        font-size: 3vw;
+        max-width: 25rem;
+    }
     .aboutImg {
-        height: 20vh;
+        height: 40vw;
+        right: 2vw;
     }
 }
