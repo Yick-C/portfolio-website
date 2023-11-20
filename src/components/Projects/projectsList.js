@@ -28,9 +28,9 @@ export const projects = [
 
   export const skills = [
     {
-      title: "Programming",
+      title: "Programming Languages",
       description:
-        "Javascript, Java"
+        "Javascript, Java, C#"
     },
     {
       title: "Web Development",

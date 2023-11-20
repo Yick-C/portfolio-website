@@ -38,3 +38,11 @@
     width: 30rem;
     margin: 0.5rem;
 }
+
+@media screen and (max-width: 720px) {
+    .projectImg {
+        height: 30vh;
+        width: 80vw;
+        margin: 0.5rem;
+    }
+}

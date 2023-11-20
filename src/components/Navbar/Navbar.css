@@ -16,7 +16,6 @@
 
 .menuItem {
     margin: 1rem;
-    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -29,5 +28,11 @@
 @media screen and (max-width: 400px) {
     .menuItem {
         font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .menuItem {
+        font-size: 1vw;
     }
 }
