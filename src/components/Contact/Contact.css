@@ -54,3 +54,19 @@
 .submitBtn:hover {
     background: #cac9c9;
 }
+
+@media screen and (max-width: 720px) {
+    .contactTitle {
+        font-size: 2rem;
+    }
+
+    .contactDesc {
+        font-size: 0.8rem;
+    }
+
+    .projectImg {
+        height: 30vh;
+        width: 80vw;
+        margin: 0.5rem;
+    }
+}

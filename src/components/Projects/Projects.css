@@ -39,7 +39,16 @@
     margin: 0.5rem;
 }
 
+
 @media screen and (max-width: 720px) {
+    .projectsTitle {
+        font-size: 2rem;
+    }
+
+    .projectsDesc {
+        font-size: 0.8rem;
+    }
+
     .projectImg {
         height: 30vh;
         width: 80vw;
