@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CC Portfolio</title>
+    <link rel="icon" type = "image/png" href="./assets/images/avatar.svg">
+    <script src="https://kit.fontawesome.com/f8c297ae49.js"crossorigin="anonymous"></script>
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <!--======= HEADER =======-->
+    <header id="header" class="fixed-top">
+        <div class="header-container container">
+            <h1 class="logo"><a href="index.html">CC</a></h1>
+            <nav id="navbar" class="navbar">
+                <ul id="navbar-items" class="navbar-items">
+                    <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
+                    <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
+                    <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
+                </ul>
+                <div id="nav-toggle" onclick="openNavbar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="navbar-mobile">
+                        <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
+                        <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
+                        <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!--======= HERO =======-->
+    <div id="hero" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <span class="hero-title">Hello, </span>
+                <span class="hero-title">I'm <span class="introName">Christina</span><br />Software Engineer</span>
+                <p class="introPara">Passionate about creating innovative solutions that elevate user experiences to new heights. </p>
+            </div>  
+        </div>
+    </div>
+    
+    <!--======= ABOUT =======-->
+    <main id="main">
+        <section id="about">
+            <div class="about-container container">
+                <h2 class="about-title">About me</h2>
+                <div class="row about-wrapper">
+                    <div class="about-image col-md-6 col-sm-12">
+                        <img
+                            class="img-fluid rounded shadow-lg"
+                            height="auto"
+                            width="400px"
+                            src="assets/images/profile.jpg"
+                            alt="Picture of desktop"
+                        />
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-content">
+                        <p class="about-content-text">
+                            This is where you can describe about yourself. The more you
+                            describe about yourself, the more chances you have!
+                        </p>
+                        <p class="about-content-text">
+                            Extra Information about you! like hobbies and your goals.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!--======= SKILLS =======-->
+    <section id="skills" class="tag skills">
+        <div class="container">
+            <h1 class="skill-title">Skills</h1>
+            <p class="skill-desc">Technology really excites me as it is always changing to improve our futures and how you can utilise your creativity to bring your ideas to life. 
+            As someone who really enjoys seeing and learning new things, this is the perfect area to satisfy my big curiosity with all the interesting new technologies while also being able to help people with my work.</p>
+            <div class="skills-container row">
+                <div class="col-md-6">
+                    <div class="skill-content">
+                        <h2 class="skill-title">Programming Languages</h2>
+                        <p class="skill-desc">Javascript, Java, C#</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-content">
+                        <h2 class="skill-title">Web Development</h2>
+                        <p class="skill-desc">HTML, CSS, Node.js, React, Express, Axios</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-content">
+                        <h2 class="skill-title">Databases</h2>
+                        <p class="skill-desc">SQL, Azure CosmosDB, MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-content">
+                        <h2 class="skill-title">Developer Tools</h2>
+                        <p class="skill-desc">Git, VS Code, Postman, Azure DevOps</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--======= PROJECTS =======-->
+    <section id="projects" class="tag projects">
+        <div class="container">
+            <h1 class="projects-title">Apps I've Built</h1>
+        <p class="projects-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
+            fuga dolore.
+        </p>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <h2 class="project-title">Project Title 1</h2>
+                    <div>
+                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Excepturi neque,</p>
+                    </div>
+                    <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#!"
+                    >
+                    See Live
+                    </a>
+                    <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="#!"
+                    >
+                    Source Code
+                    </a>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <img src="./assets/images/todolist.jpg" alt="todolist" class="projectImg" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <h2 class="project-title">Project Title 2</h2>
+                    <div>
+                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Excepturi neque,</p>
+                    </div>
+                    <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#!"
+                    >
+                    See Live
+                    </a>
+                    <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="#!"
+                    >
+                    Source Code
+                    </a>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <img src="./assets/images/portfolio-1.jpg" alt="todolist" class="projectImg" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <h2 class="project-title">Project Title 3</h2>
+                    <div>
+                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Excepturi neque,</p>
+                    </div>
+                    <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#!"
+                    >
+                    See Live
+                    </a>
+                    <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="#!"
+                    >
+                    Source Code
+                    </a>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <img src="./assets/images/portfolio-2.jpg" alt="todolist" class="projectImg" />
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="contact" class="tag contactPage">
+        <div class="container">
+            <div id="contact">
+                <h1 class="contact-title">Contact Me</h1>
+                <p class="contact-desc">Please fill out the form below if you would like to contact me.</p>
+                <form class="contactForm">
+                <input type="text" class="name" placeholder="Your Name"/>
+                <input type="email" class="email" placeholder="Your Email" />
+                <textarea class="msg" name="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" value="send" class="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+</div>
+</main>
+
+<!--======= FOOTER =======-->
+<footer>
+    <div class="container">
+        <div class="home_social">
+            <a
+              href="https://www.github.com/"
+              target="_blank"
+              class="home_social-icon"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="home_social-icon"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <p>
+            Copyright &#169; 2024 <br />
+        </p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
