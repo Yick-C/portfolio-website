@@ -21,29 +21,27 @@
 <body>
     <!--======= HEADER =======-->
     <header id="header" class="fixed-top">
-        <div class="header-container container">
-            <h1 class="logo"><a href="index.html">CC</a></h1>
-            <nav id="navbar" class="navbar">
-                <ul id="navbar-items" class="navbar-items">
+        <a class="logo" href="#">CC</a>
+        <nav id="navbar" class="navbar">
+            <ul id="navbar-items" class="navbar-items">
+                <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
+                <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
+            </ul>
+            <div id="nav-toggle" onclick="openNavbar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="navbar-mobile">
                     <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
                     <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
                     <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
                     <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
                 </ul>
-                <div id="nav-toggle" onclick="openNavbar(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                    <ul class="navbar-mobile">
-                        <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
-                        <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
-                        <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
-                        <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
-                        <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
+        </nav>
 
         </div>
     </header>
@@ -77,11 +75,10 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="about-content">
                         <p class="about-content-text">
-                            This is where you can describe about yourself. The more you
-                            describe about yourself, the more chances you have!
+                            Technology really excites me as it is always changing to improve our futures and how you can utilise your creativity to bring your ideas to life. 
                         </p>
                         <p class="about-content-text">
-                            Extra Information about you! like hobbies and your goals.
+                            As someone who really enjoys seeing and learning new things, this is the perfect area to satisfy my big curiosity with all the interesting new technologies while also being able to help people with my work.
                         </p>
                         </div>
                     </div>
@@ -90,34 +87,56 @@
         </section>
     
     <!--======= SKILLS =======-->
-    <section id="skills" class="tag skills">
+    <section id="skills" class="skills">
         <div class="container">
-            <h1 class="skill-title">Skills</h1>
-            <p class="skill-desc">Technology really excites me as it is always changing to improve our futures and how you can utilise your creativity to bring your ideas to life. 
-            As someone who really enjoys seeing and learning new things, this is the perfect area to satisfy my big curiosity with all the interesting new technologies while also being able to help people with my work.</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="skills-main-title">Skills</h1>
+                    <p class="skill-main-desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                        facilis repellat ab cupiditate alias </p>
+                </div>
+            </div>
             <div class="skills-container row">
-                <div class="col-md-6">
-                    <div class="skill-content">
-                        <h2 class="skill-title">Programming Languages</h2>
-                        <p class="skill-desc">Javascript, Java, C#</p>
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <div class="skill-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa-regular fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-file-code"></i>
+                            </span>
+                        </div>
+                        <div class="skill-content">
+                            <h2 class="skill-title">Programming Languages</h2>
+                            <p class="skill-desc">Javascript, Java, C#</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skill-content">
-                        <h2 class="skill-title">Web Development</h2>
-                        <p class="skill-desc">HTML, CSS, Node.js, React, Express, Axios</p>
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <div class="skill-icon">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa-regular fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-computer"></i>
+                        </span>
+                        </div>
+                        <div class="skill-content">
+                            <h2 class="skill-title">Web Development</h2>
+                            <p class="skill-desc">HTML, CSS, Node.js, React, Express, Axios</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skill-content">
-                        <h2 class="skill-title">Databases</h2>
-                        <p class="skill-desc">SQL, Azure CosmosDB, MongoDB</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill-content">
-                        <h2 class="skill-title">Developer Tools</h2>
-                        <p class="skill-desc">Git, VS Code, Postman, Azure DevOps</p>
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <div class="skill-icon">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa-regular fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-database"></i>
+                        </span>
+                        </div>
+                        <div class="skill-content">
+                            <h2 class="skill-title">Databases</h2>
+                            <p class="skill-desc">SQL, Azure CosmosDB, MongoDB</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,7 +144,7 @@
     </section>
 
     <!--======= PROJECTS =======-->
-    <section id="projects" class="tag projects">
+    <section id="projects" class="projects">
         <div class="container">
             <h1 class="projects-title">Apps I've Built</h1>
         <p class="projects-desc">
@@ -143,7 +162,7 @@
                     <a
                     rel="noreferrer"
                     target="_blank"
-                    class="cta-btn cta-btn--hero"
+                    class="project-btn cta-btn--hero"
                     href="#!"
                     >
                     See Live
@@ -151,7 +170,7 @@
                     <a
                     rel="noreferrer"
                     target="_blank"
-                    class="cta-btn text-color-main"
+                    class="project-btn"
                     href="#!"
                     >
                     Source Code
@@ -171,7 +190,7 @@
                     <a
                     rel="noreferrer"
                     target="_blank"
-                    class="cta-btn cta-btn--hero"
+                    class="project-btn"
                     href="#!"
                     >
                     See Live
@@ -179,7 +198,7 @@
                     <a
                     rel="noreferrer"
                     target="_blank"
-                    class="cta-btn text-color-main"
+                    class="project-btn"
                     href="#!"
                     >
                     Source Code
@@ -199,7 +218,7 @@
                     <a
                     rel="noreferrer"
                     target="_blank"
-                    class="cta-btn cta-btn--hero"
+                    class="project-btn"
                     href="#!"
                     >
                     See Live
@@ -207,7 +226,7 @@
                     <a
                     rel="noreferrer"
                     target="_blank"
-                    class="cta-btn text-color-main"
+                    class="project-btn"
                     href="#!"
                     >
                     Source Code
@@ -220,7 +239,7 @@
             
         </div>
     </section>
-    <section id="contact" class="tag contactPage">
+    <section id="contact" class="contactPage">
         <div class="container">
             <div id="contact">
                 <h1 class="contact-title">Contact Me</h1>
