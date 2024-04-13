@@ -429,7 +429,12 @@ ul li {
 }
 
 .projects-container {
-  margin-bottom: 15rem;
+  padding: 2rem;
+}
+
+.project-box {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
 }
 
 .projects-desc {
@@ -442,6 +447,7 @@ ul li {
   width: 40rem;
   margin: 0.5rem;
   transition: transform 0.5s;
+  box-shadow: 0 10px 20px -10px #333;
 }
 
 .project-btn {
