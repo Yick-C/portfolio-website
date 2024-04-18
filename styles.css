@@ -10,9 +10,9 @@
   --gradient-secondary-color: #00cdac;
 
   --default-font-size: 1.5rem;
-  --big-font-size: 4rem;
-  --mid-font-size: 2.5rem;
-  --small-font-size: 1.2rem;
+  --big-font-size: 2.5rem;
+  --mid-font-size: 1.3rem;
+  --small-font-size: 1.1rem;
   --extrasmall-font-size: 0.5rem;
 }
 
@@ -70,7 +70,7 @@ section {
 .title {
     text-align: center;
     padding: 15px;
-    font-size: var(--mid-font-size);
+    font-size: var(--big-font-size);
     text-decoration: underline;
     text-decoration-color: var(--secondary-color);
   }
@@ -122,7 +122,7 @@ ul li {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  font-size: var(--default-font-size);
+  font-size: var(--small-font-size);
   font-weight: 600;
   padding: 0;
   white-space: nowrap;
@@ -310,7 +310,7 @@ ul li {
 .about-title {
   text-align: center;
   padding: 15px;
-  font-size: var(--mid-font-size);
+  font-size: var(--big-font-size);
   text-decoration: underline;
   text-decoration-color: var(--secondary-color);
 }
@@ -327,7 +327,7 @@ ul li {
 
 @media screen and (max-width: 1000px) {
   .hero-title {
-    font-size: var(--mid-font-size);
+    font-size: var(--big-font-size);
   }
   .introPara {
     font-size: var(--small-font-size);
@@ -547,6 +547,16 @@ footer {
   padding: 50px 0;
   text-align: center;
   background-color: #333;
+}
+
+.back-to-top i {
+  color: white;
+  font-size: 40px;
+  margin: 1rem 0;
+}
+
+.back-to-top i:hover {
+  transform: translate(0, -0.5vh);
 }
 
 .home_social {
