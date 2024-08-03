@@ -19,7 +19,7 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./styles.css"/>
-</head>
+</head> 
 <body>
     <div id="top"></div>
     <!--======= HEADER =======-->
@@ -50,39 +50,42 @@
     </header>
 
     <!--======= HERO =======-->
-    <div id="hero" class="hero">
-        <div class="hero-content">
-            <div class="container">
-                <span class="hero-title">Hello, </span>
-                <span class="hero-title">I'm <span class="introName">Christina</span><br />Software Engineer</span>
-                <p class="introPara">Passionate about creating innovative solutions that elevate user experiences to new heights. </p>
-            </div>  
+    <section id="hero" class="hero">
+        <div class="hero__pic-container">
+            <img src="./assets/images/woman.jpg" alt="Smiling woman">
         </div>
-    </div>
+        <div class="hero-content">
+            <p class="greetings-animation"><span></span></p>
+            <h1 class="hero-title">I'm <span class="introName">Christina</span></h1>
+            <p  class="hero-title">Software Developer</p>
+            <p class="introPara">Passionate about creating innovative solutions that elevate user experiences. </p>
+        </div>
+    </section>
     
     <!--======= ABOUT =======-->
     <main id="main">
         <section id="about">
+            <h2 class="about-title">About me</h2>
             <div class="about-container container">
-                <h2 class="title">About me</h2>
                 <div class="row about-wrapper">
                     <div class="about-image col-md-6 col-sm-12">
                         <img
                             class="img-fluid rounded shadow-lg"
                             height="auto"
-                            width="400px"
+                            width="500px"
                             src="assets/images/profile.jpg"
                             alt="Picture of desktop"
                         />
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="about-content">
-                        <p class="about-content-text">
-                            Technology really excites me as it is always changing to improve our futures and how you can utilise your creativity to bring your ideas to life. 
-                        </p>
-                        <p class="about-content-text">
-                            As someone who really enjoys seeing and learning new things, this is the perfect area to satisfy my big curiosity with all the interesting new technologies while also being able to help people with my work.
-                        </p>
+                            <p>I'm a Software Developer who studied Computer Science at University. I have experience in Chatbots, NLP and also Web development. Currently, I have been studying C# and MVC projects.</p><br/>
+                            <p class="about-content-text">
+                                Technology really excites me as it is always changing to improve our futures and how you can utilise your creativity to bring your ideas to life. 
+                            </p>
+                            <p class="about-content-text">
+                                As someone who really enjoys seeing and learning new things, this is the perfect area to satisfy my big curiosity with all the interesting new technologies while also being able to help people with my work.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -113,6 +116,11 @@
                                 <h2 class="skill-title">Programming Languages</h2>
                                 <p class="skill-desc">Javascript, Java, C#</p>
                             </div>
+                            <div class="skill-icon">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-java-plain-wordmark colored"></i>
+                                <i class="devicon-csharp-line-wordmark colored"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -126,6 +134,12 @@
                             <div class="skill-content">
                                 <h2 class="skill-title">Web Development</h2>
                                 <p class="skill-desc">HTML, CSS, Node.js, React</p>
+                            </div>
+                            <div class="skill-icon">
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                                <i class="devicon-react-original-wordmark colored"></i>
                             </div>
                         </div>
                     </div>
@@ -141,32 +155,7 @@
                                 <h2 class="skill-title">Databases</h2>
                                 <p class="skill-desc">SQL, Azure CosmosDB, MongoDB</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- SKILL ICONS -->
-                    <div class="col-md-4">
-                        <div class="skill-box">
-                            <div class="skill-content-icons">
-                                <i class="devicon-javascript-plain colored"></i>
-                                <i class="devicon-java-plain-wordmark colored"></i>
-                                <i class="devicon-csharp-line-wordmark colored"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill-box">
-                            <div class="skill-content-icons">
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                                <i class="devicon-react-original-wordmark colored"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill-box">
-                            <div class="skill-content-icons"> 
+                            <div class="skill-icon"> 
                                 <i class="devicon-azuresqldatabase-plain colored"></i>
                                 <i class="devicon-cosmosdb-plain-wordmark colored"></i>
                                 <i class="devicon-mongodb-plain-wordmark colored"></i>
@@ -181,7 +170,7 @@
     <!--======= PROJECTS =======-->
     <section id="projects" class="projects">
         <div class="container">
-            <h1 class="title projects-title">Apps I've Built</h1>
+            <h1 class="title">Apps I've Built</h1>
             <p class="projects-desc">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
                 facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
@@ -284,15 +273,18 @@
     <section id="contact" class="contactPage">
         <div class="container">
             <h1 class="title contact-title">Contact Me</h1>
-            <p class="contact-desc">Please fill out the form below if you would like to contact me.</p>
-            <div id="contact">
-                <form class="contactForm">
-                <input type="text" class="name" placeholder="Your Name"/>
-                <input type="email" class="email" placeholder="Your Email" />
-                <textarea class="msg" name="message" rows="5" placeholder="Your Message"></textarea>
-                <button type="submit" value="send" class="submitBtn">Submit</button>
-                </form>
+            <div class="contact__form">
+                <p class="contact-desc">Please fill out the form below if you would like to contact me.</p>
+                <div id="contact">
+                    <form class="contactForm">
+                    <input type="text" class="name" placeholder="Your Name"/>
+                    <input type="email" class="email" placeholder="Your Email" />
+                    <textarea class="msg" name="message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" value="send" class="submitBtn">Submit</button>
+                    </form>
+                </div>
             </div>
+            
         </div>
         
     </section>

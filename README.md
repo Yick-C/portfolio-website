@@ -12,3 +12,5 @@ Fonts - https://fonts.google.com/
 SVG icon - https://www.svgrepo.com/
 
 Programming languages and Dev tools icons - https://devicon.dev/
+
+Image by Natalia Lavrinenko from Pixabay
