@@ -3,7 +3,7 @@
 ## Resources
 Placeholder pictures - https://picsum.photos/
 
-Images - https://unsplash.com/
+Images - https://unsplash.com/ and unDraw https://undraw.co/illustrations
 
 Colour themes - https://colorhunt.co/
 
@@ -12,5 +12,3 @@ Fonts - https://fonts.google.com/
 SVG icon - https://www.svgrepo.com/
 
 Programming languages and Dev tools icons - https://devicon.dev/
-
-Image by Natalia Lavrinenko from Pixabay

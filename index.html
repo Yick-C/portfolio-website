@@ -24,27 +24,42 @@
     <div id="top"></div>
     <!--======= HEADER =======-->
     <header id="header" class="fixed-top">
-        <a class="logo" href="#">CC</a>
-        <nav id="navbar" class="navbar">
-            <ul id="navbar-items" class="navbar-items">
-                <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
-                <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
-                <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
-            </ul>
-            <div id="nav-toggle" onclick="openNavbar(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="navbar-mobile">
-                    <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
-                    <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
-                    <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
-                </ul>
-        </nav>
+            <a class="logo" href="#">CC</a>
+            <div class="header-right">
+                <!-- Dark mode switch -->
+                <div class="theme-switch-wrapper">
+                    <span id="toggle-icon">
+                        <i class="fas fa-sun"></i>
+                    </span>
+                    <label class="theme-switch">
+                        <input type="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <nav id="navbar">
+                    <ul id="navbar-items" class="navbar-items">
+                        <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
+                        <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
+                        <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
+                    </ul>
+                    <div id="nav-toggle" onclick="openNavbar(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <ul id="navbar-mobile">
+                            <li><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
+                            <li><a href="#about" class="nav-link">About <i class="fa-solid fa-user"></i></a></li>
+                            <li><a href="#skills" class="nav-link">Skills <i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-code"></i></a></li>
+                            <li><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-at"></i></a></li>
+                        </ul>
+                </nav>
+            </div>
+        
+        
+        
 
         </div>
     </header>
@@ -52,13 +67,13 @@
     <!--======= HERO =======-->
     <section id="hero" class="hero">
         <div class="hero__pic-container">
-            <img src="./assets/images/woman.jpg" alt="Smiling woman">
+            <img src="./assets/images/undraw_welcome_light.svg" alt="Dream world woman" id="heroImage">
         </div>
         <div class="hero-content">
             <p class="greetings-animation"><span></span></p>
             <h1 class="hero-title">I'm <span class="introName">Christina</span></h1>
             <p  class="hero-title">Software Developer</p>
-            <p class="introPara">Passionate about creating innovative solutions that elevate user experiences. </p>
+            <p class="introPara">Passionate about creating innovative solutions that elevate user experiences </p>
         </div>
     </section>
     
@@ -73,8 +88,9 @@
                             class="img-fluid rounded shadow-lg"
                             height="auto"
                             width="500px"
-                            src="assets/images/profile.jpg"
-                            alt="Picture of desktop"
+                            src="assets/images/undraw_dream_world_light.svg"
+                            alt="Woman walking"
+                            id="aboutImage"
                         />
                     </div>
                     <div class="col-md-6 col-sm-12">
