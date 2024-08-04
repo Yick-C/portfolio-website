@@ -34,7 +34,7 @@
   box-sizing: border-box;
   text-decoration: none;
   background-color: transparent;
-  font-family: "Pridi", "sans-serif";
+  font-family: "Pridi", "Roboto Slab", "Roboto", "sans-serif";
 }
 
 body {
@@ -205,7 +205,7 @@ ul li {
   align-items: center;
   justify-content: space-between;
   color: var(--font-color);
-  font-size: var(--default-font-size);
+  font-size: var(--mid-font-size);
   font-weight: 600;
   padding: 0;
   white-space: nowrap;
@@ -249,8 +249,8 @@ ul li {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -269,19 +269,20 @@ ul li {
   margin: auto 0;
   display: none;
   cursor: pointer;
+  padding-top: 1rem;
 }
 
 #nav-toggle div {
-  width: 35px;
-  height: 3px;
+  width: 3.8rem;
+  height: 0.5rem;
   background-color: var(--font-color);
-  margin: 6px 0;
+  margin: 8px 0;
   transition: 0.4s;
 }
 
 .open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.5rem);
+  transform: rotate(-45deg) translate(-0.9rem, 0.5rem);
 }
 
 .open .bar2 {
@@ -289,8 +290,8 @@ ul li {
 }
 
 .open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
+  -webkit-transform: rotate(45deg) translate(-0.9rem, 0.5rem);
+  transform: rotate(45deg) translate(-0.9rem, -0.5rem);
 }
 
 .open #navbar-mobile {
@@ -298,6 +299,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 #navbar-mobile {
@@ -311,6 +313,7 @@ ul li {
 
 #navbar-mobile a {
   color: white;
+  font-size: var(--mid-font-size);
 }
 
 #navbar-mobile a:hover {
@@ -324,6 +327,14 @@ ul li {
 
   #nav-toggle {
     display: block;
+  }
+
+  header {
+    height: 9rem;
+  }
+
+  .theme-switch-wrapper {
+    padding-right: 4rem;
   }
 }
 
@@ -451,6 +462,16 @@ ul li {
   80%,
   85% {
     width: calc(100% + 8px);
+  }
+}
+
+@media (max-width: 991px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  .hero__pic-container {
+    margin: 5rem;
   }
 }
 
