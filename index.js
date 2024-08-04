@@ -47,3 +47,5 @@ function switchTheme(event) {
 
 // Event Listener
 toggleSwitch.addEventListener('change', switchTheme);
+
+AOS.init();
