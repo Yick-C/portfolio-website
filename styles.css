@@ -337,6 +337,10 @@ ul li {
   .theme-switch-wrapper {
     padding-right: 4rem;
   }
+
+  .theme-switch {
+    height: 3rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -344,19 +348,22 @@ ul li {
 --------------------------------------------------------------*/
 #hero {
   display: flex;
+  align-items: center;
   justify-content: center;
   color: var(--font-color);
 }
 
 .hero__pic-container {
   display: flex;
-  height: 25rem;
-  width: 40rem;
-  margin: auto 0;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce;
   animation-timing-function: ease;
+}
+
+.hero__pic-container img {
+  height: 30rem;
+  width: 30rem;
 }
 
 .hero-content {

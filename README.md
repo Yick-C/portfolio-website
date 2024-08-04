@@ -1,4 +1,5 @@
 # CC Portfolio
+For the direct link: https://yick-c.github.io/portfolio-website/
 
 ## Resources
 Placeholder pictures - https://picsum.photos/
