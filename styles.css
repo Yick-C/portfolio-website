@@ -437,7 +437,7 @@ ul li {
 @keyframes words {
   0%,
   20% {
-    content: "Bonjour !"
+    content: "Hello !";
   }
   21%,
   40% {
@@ -445,7 +445,7 @@ ul li {
   }
   41%,
   60% {
-    content: "こんにちは !"
+    content: "こんにちは !";
   }
   61%,
   80% {
@@ -453,7 +453,7 @@ ul li {
   }
   81%,
   100% {
-    content: "Hello !";
+    content: "Bonjour !";
   }
 }
 
