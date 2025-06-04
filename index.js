@@ -45,9 +45,10 @@ function switchTheme(event) {
   }
 }
 // Closes menu once an option is clicked
-document.querySelectorAll('#navbar-mobile .nav-link').forEach(link => {
+document.querySelectorAll('#navbar-mobile .nav-mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById("navbar-mobile").classList.remove("show");
+    document.getElementById("nav-toggle").classList.toggle("open");
   });
 });
 
