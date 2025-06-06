@@ -549,7 +549,7 @@ ul li {
   }
 
   .hero__pic-container {
-    margin: 5rem;
+    margin: 3rem;
   }
 }
 
@@ -630,6 +630,7 @@ ul li {
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  height: 25rem;
 }
 
 .skill-icon {
@@ -675,12 +676,21 @@ ul li {
 }
 
 .skill-icon-lang {
-  font-size: var(--big-font-size);
+  font-size: 2.8rem;
 }
 
 @media (max-width: 991px) {
   #skills-container {
     margin-bottom: 0rem;
+  }
+
+  .skill-desc {
+    color: black;
+    font-size: var(--small-font-size);
+  }
+
+  .skill-icon-lang {
+    font-size: 1.2rem;
   }
 
 }
@@ -695,6 +705,10 @@ ul li {
 
 .projects-container {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-box {
